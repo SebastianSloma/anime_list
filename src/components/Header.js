@@ -2,7 +2,9 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <heder>
+        <h1>The<strong>Anime</strong>Database</h1>
+    </heder>
   )
 }
 

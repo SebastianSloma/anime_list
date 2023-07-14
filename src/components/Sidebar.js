@@ -1,14 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
-function Sidebar() {
+function Sidebar({topAnime}) {
 	return (
 		<aside>
 			<nav>
 				<h3>Top Anime</h3>
-				<a href='#' target='_blank' rel='noreferrer'>Attack on Titan</a>
-				<a href='#' target='_blank' rel='noreferrer'>One Punch Man</a>
-				<a href='#' target='_blank' rel='noreferrer'>Sword Art Online</a>
+                {topAnime.map(anime =>(
+                    <a
+                    href='#'
+                    target='_blank'
+                    rel='noreferrer'
+                    >
+                        {anime.title}
+                    </a>
+                ))}
+
 			</nav>
 		</aside>
 	);

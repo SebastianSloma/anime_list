@@ -2,7 +2,14 @@ import React from 'react'
 
 function MainContent() {
   return (
-    <div>MainContent</div>
+    <main>
+        <div className='main-head'>
+            <form className='search-box'>
+                <input className='search'/>
+            </form>
+
+        </div>
+    </main>
   )
 }
 

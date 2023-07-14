@@ -5,7 +5,7 @@ function MainContent() {
     <main>
         <div className='main-head'>
             <form className='search-box'>
-                <input className='search'/>
+                <input className='search' placeholder='Search for an anime...' required/>
             </form>
 
         </div>
